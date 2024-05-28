@@ -1,0 +1,69 @@
+:root {
+  --cinza: #c1c1c1;
+  --cinza-escuro: #808080;
+  --branco: #ffffff;
+  --primary: #0054e9;
+  --primary-tint: #1a65eb;
+  --secondaty: #0163aa;
+  --secondary-tint: #1a73b3;
+  --tertiary: #6030ff;
+  --tertiary-tint: #7045ff;
+  --success: #2dd55b;
+  --success-tint: #42d96b;
+  --success-contraste: #024904;
+  --warning: #ffc409;
+  --warning-tint: #ffca22;
+  --danger: #c5000f;
+  --danger-tint: #cb1a27;
+  --light: #f6f8fc;
+  --light-tint: #f7f9fc;
+  --medium: #5f5f5f;
+  --medium-tint: #6f6f6f;
+  --dark: #2f2f2f;
+  --dark-tint: #444444;
+}
+body {
+  font-family: "Gayathri", sans-serif;
+}
+
+.container {
+  display: grid;
+  background-color: brown;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "footer footer";
+  height: 100vh;
+  width: 100vw;
+  max-width: 1920px;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 1fr 100px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--success);
+}
+
+.header {
+  grid-area: header;
+  background-color: burlywood;
+}
+
+.main {
+  grid-area: main;
+  background-color: chartreuse;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: blue;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 50px 1fr 100px;
+  }
+}

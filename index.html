@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar tailwind</title>
+    <link rel="stylesheet" href="styles/resets.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="fonts/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Header</header>
+
+      <nav class="sidebar overflow-y-auto">
+        <div class="flex my-7">
+          <img class="mx-auto" src="img/letter-c-square.svg" alt="Logo" width="25px" />
+        </div>
+
+        <hr class="lines" />
+
+        <div class="flex items-center gap-2">
+          <img
+            class="sidebar__foto-perfil"
+            src="img/no-profile.svg"
+            alt="Foto Perfil"
+            width="35px"
+          />
+          <div class="sidebar__foto-textos text-white">
+            <div class="sidebar__foto-nome">Cleber Martins</div>
+            <div class="sidebar__foto-conta">Minha Conta</div>
+          </div>
+        </div>
+
+        <hr class="lines" />
+        <ul class="menu">
+          <p class="uppercase text-center mt-2">Menu</p>
+          <li class="ml-4 my-4 hover:opacity-60">
+            <a class="flex items-center" href="#home">
+              <div class="w-7 text-center">
+                <i class="fa fa-home text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Início</p>
+            </a>
+          </li>
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#add-post">
+              <div class="w-7 text-center">
+                <i class="fas fa-file-plus text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Novo Post</p>
+            </a>
+          </li>
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#mail">
+              <div class="w-7 text-center">
+                <i class="far fa-envelope text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Mensagens</p>
+            </a>
+          </li>
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#friends">
+              <div class="w-7 text-center">
+                <i class="far fa-user-friends text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Amigos</p>
+            </a>
+          </li>
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#notification">
+              <div class="w-7 text-center">
+                <i class="fas fa-bell text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Notificações</p>
+              <div class="flex-notificacao-simbol"></div>
+              <div class="flex-notificacao">
+                <p>99+</p>
+              </div>
+            </a>
+          </li>
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#grupos">
+              <div class="w-7 text-center">
+                <i class="fas fa-users text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Grupos</p>
+            </a>
+          </li>
+          <hr class="lines" />
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#pages">
+              <div class="w-7 text-center">
+                <i class="fas fa-columns text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Páginas</p>
+            </a>
+          </li>
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#game">
+              <div class="w-7 text-center">
+                <i class="fas fa-gamepad text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Jogos</p>
+            </a>
+          </li>
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#settings">
+              <div class="w-7 text-center">
+                <i class="fas fa-cogs text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Configurações</p>
+            </a>
+          </li>
+          <hr class="lines" />
+          <li class="ml-4 my-4">
+            <a class="flex items-center" href="#logoff">
+              <div class="w-7 text-center">
+                <i class="fas fa-power-off text-2xl"></i>
+              </div>
+              <p class="menu__link-texto ml-6 mt-1">Sair</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="main">main</main>
+
+      <footer class="footer">footer</footer>
+    </div>
+  </body>
+</html>
